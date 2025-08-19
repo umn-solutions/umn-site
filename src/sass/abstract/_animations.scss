@@ -1,0 +1,78 @@
+//============================================ TRANSITIONS
+@mixin button {
+	transition: all 0.2s ease-in-out;
+	cursor: pointer;
+	&:hover {
+		transform: scale(0.95);
+	}
+
+	&:active {
+		transform: scale(0.85);
+	}
+}
+
+//============================================ ANIMATIONS
+@mixin base-anim($animation) {
+	animation: #{$animation} 0.5s ease-in-out 1 both;
+}
+
+@keyframes fade-in {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+@mixin fade-in {
+	@include base-anim(fade-in);
+}
+
+@keyframes pop-in {
+	from {
+		transform: scale(0.5);
+		opacity: 0;
+	}
+	to {
+		transform: scale(1);
+		opacity: 1;
+	}
+}
+
+@mixin pop-in {
+	@include base-anim(pop-in);
+}
+
+@keyframes glow {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@mixin glow {
+	@include base-anim(glow);
+	animation-iteration-count: infinite;
+	animation-duration: 1.5s;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: both;
+	animation-direction: alternate;
+	// animation-delay: 1s;
+}
+
+@keyframes slide-from-right {
+	from {
+		transform: translateX(100%);
+		// opacity: 0;
+	}
+	to {
+		transform: translateX(0);
+		// opacity: 1;
+	}
+}
+
+@mixin slide-from-right {
+	@include base-anim(slide-from-right);
+}

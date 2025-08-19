@@ -1,0 +1,34 @@
+@use "../abstract/colors" as colors;
+@use "sass:color";
+
+:root {
+	font-size: clamp(0.91rem, 2vmax, 1.25rem);
+}
+
+//============ HEADINGS
+$phi: 1.6180339887;
+$base-h: 2.35rem;
+@for $i from 1 to 6 {
+	h#{$i},
+	.h#{$i} {
+		$size: $base-h * $phi * (1 - $i * 0.15);
+		font-size: clamp($size * 0.75, 2vmax, $size * 1);
+		text-align: center;
+	}
+}
+
+* {
+	font-family: var(--font-aptos);
+	font-size: 1rem;
+	user-select: none;
+}
+
+button,
+a {
+	font-family: var(--font-mescla);
+	font-size: 1.15rem;
+}
+.umn_gold {
+	font-weight: bold;
+	color: colors.$text-tertiary;
+}

@@ -1,0 +1,97 @@
+/* === FULL CSS RESET === */
+
+/* Resets most browser defaults to a clean slate */
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border: none;
+	box-shadow: none;
+	background: none;
+	outline: none;
+}
+
+/* Remove list styles */
+ol,
+ul {
+	list-style: none;
+}
+
+/* Remove text decoration and default link color */
+a,
+a:link,
+a:visited,
+a:hover,
+a:active,
+a:focus {
+	all: unset; /* Removes all user-agent styles */
+	text-decoration: none;
+	color: inherit;
+	cursor: pointer; /* Keep pointer for usability */
+}
+
+/* Remove default table styles */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Remove border from images inside links */
+img {
+	border-style: none;
+	max-width: 100%;
+	display: block;
+}
+
+/* Remove default form element styles */
+input,
+button,
+textarea,
+select {
+	font: inherit;
+	color: inherit;
+	background: none;
+	border: none;
+	outline: none;
+}
+
+/* Ensure buttons behave consistently */
+button {
+	cursor: pointer;
+}
+
+/* Remove default blockquote styles */
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+	content: "";
+}
+
+/* Make HTML5 elements display block */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+/* Set a consistent base font and background */
+html {
+	line-height: 1.15; /* Improve readability */
+}
