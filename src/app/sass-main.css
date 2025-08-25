@@ -172,7 +172,7 @@ img {
 }
 
 :root {
-  font-size: clamp(0.91rem, 2vmax, 1.2rem);
+  font-size: clamp(0.91rem, 2vmax, 1.15rem);
 }
 
 h1,
