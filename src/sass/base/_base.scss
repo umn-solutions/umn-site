@@ -11,13 +11,14 @@ body {
 	overflow: auto;
 	height: 100%;
 	scroll-snap-type: y mandatory;
+	overscroll-behavior-y: contain;
 }
 .main-section {
 	scroll-behavior: smooth;
 	scroll-snap-align: center;
 	scroll-snap-stop: always;
-	height: 100vh;
-	padding-top: 10vh;
+	height: 100dvh;
+	padding-top: 10dvh;
 	@include layouts.flex-col;
 	place-content: center;
 	place-items: center;
@@ -39,4 +40,8 @@ body::-webkit-scrollbar {
 	width: 0;
 	height: 0;
 	background: transparent; /* optional */
+}
+
+img {
+	pointer-events: none;
 }

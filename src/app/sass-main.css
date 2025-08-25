@@ -134,14 +134,15 @@ body {
   overflow: auto;
   height: 100%;
   scroll-snap-type: y mandatory;
+  overscroll-behavior-y: contain;
 }
 
 .main-section {
   scroll-behavior: smooth;
   scroll-snap-align: center;
   scroll-snap-stop: always;
-  height: 100vh;
-  padding-top: 10vh;
+  height: 100dvh;
+  padding-top: 10dvh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -164,6 +165,10 @@ body::-webkit-scrollbar {
   width: 0;
   height: 0;
   background: transparent; /* optional */
+}
+
+img {
+  pointer-events: none;
 }
 
 :root {
@@ -337,7 +342,7 @@ a {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     grid-area: 0.5em;
-    height: 40vh;
+    height: 40dvh;
     overflow: auto;
     scrollbar-width: 0.33rem;
     -ms-overflow-style: auto;
@@ -717,7 +722,7 @@ a {
 
 .embla {
   margin: auto;
-  --slide-height: 50vh;
+  --slide-height: 50dvh;
   --slide-spacing: 1rem;
   --slide-size: 50vw;
   overflow: hidden;
@@ -726,7 +731,7 @@ a {
 }
 @media screen and (max-width: 1000px) {
   .embla {
-    --slide-height: 50vh;
+    --slide-height: 50dvh;
     --slide-size: 80vw;
   }
 }
@@ -969,19 +974,18 @@ section.whatwedo {
 section.solutions {
   background: linear-gradient(35deg, rgb(2.9761904762, 42.2619047619, 72.0238095238), rgb(7.0238095238, 99.7380952381, 169.9761904762));
 }
-section.solutions > * {
-  z-index: 1;
-}
 section.solutions .umn-pattern {
   position: absolute;
   z-index: 0;
+  inset: 0;
+  width: 200%;
+  height: 100%;
 }
 section.solutions .umn-title {
   align-self: flex-start;
-  margin-left: 3.5ch;
+  margin-left: 2.5ch;
 }
 section.solutions .carousel {
-  height: 80%;
   width: 100%;
 }
 

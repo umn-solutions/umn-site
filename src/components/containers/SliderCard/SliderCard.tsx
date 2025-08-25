@@ -17,11 +17,11 @@ export default function SliderCard({ pane1, pane2 }: SliderCardProps) {
 		if (cardRef.current) {
 			//Initial setting
 			if (mousePos.x < 0) {
-				cardRef.current.style.width = `${50}%`;
+				cardRef.current.style.width = `${40}%`;
 				return;
 			}
 			const val =
-				(((mousePos.x + Math.log(mousePos.y)) * 1.2) /
+				(((mousePos.x + Math.log(mousePos.y)*10) * 1.2) /
 					window.innerWidth) *
 				100;
 
