@@ -172,7 +172,7 @@ img {
 }
 
 :root {
-  font-size: clamp(0.91rem, 2vmax, 1.25rem);
+  font-size: clamp(0.91rem, 2vmax, 1.2rem);
 }
 
 h1,
@@ -448,7 +448,7 @@ a {
 .contact-btn {
   font-size: 1.1rem;
   position: fixed;
-  bottom: 13.75%;
+  bottom: 10%;
   left: 50%;
   transform: translateX(-50%);
   z-index: 10;
@@ -510,7 +510,7 @@ a {
   display: flex;
   place-content: center;
   place-items: center;
-  cursor: grab;
+  cursor: col-resize;
 }
 .slider-card__pane {
   width: 100%;
@@ -1018,7 +1018,7 @@ section.solutions .carousel {
 .team__text {
   color: #054779;
   max-width: 50ch;
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   padding-left: 3em;
 }
 .team__photo {
