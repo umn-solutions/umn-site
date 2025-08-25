@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* === FULL CSS RESET === */
 /* Resets most browser defaults to a clean slate */
 *,
@@ -87,6 +88,39 @@ menu,
 nav,
 section {
   display: block;
+}
+
+/* Remove tap highlight (iOS Safari, some Android browsers) */
+* {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none; /* disables callout menu on long press */
+}
+
+/* Prevent default text selection highlight */
+* {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Prevent default scrolling momentum “bounce” overscroll glow on iOS */
+html,
+body {
+  overscroll-behavior: none;
+  -webkit-overflow-scrolling: auto;
+}
+
+/* Prevent zoom on input focus (Safari) */
+input,
+textarea,
+select {
+  font-size: 16px; /* Safari zooms if <16px */
+}
+
+/* Disable focus ring styles (if you don’t want them) */
+:focus {
+  outline: none !important;
 }
 
 html {
