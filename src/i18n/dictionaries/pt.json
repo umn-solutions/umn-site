@@ -10,59 +10,143 @@
 		]
 	},
 	"whatwedo": {
-		"title": "What we do",
-		"topics": [
-			{
-				"title": "Strategic Digital Transformation"
-			},
-			{
-				"title": "Big Data & Predictive Analytics"
-			},
-			{
-				"title": "Automation & AI Integration"
-			},
-			{
-				"title": "Performance & Service Perception Platforms"
-			},
-			{
-				"title": "Continuous improvements & Workforce Enablement"
-			}
-		]
+		"pane1": {
+			"title": "What we do",
+			"items": [
+				"Strategic Digital Change",
+				"Big Data & Predictive Analytics",
+				"Automation with AI",
+				"Performance & Experience Platforms",
+				"Ongoing Improvement & Workforce Growth"
+			]
+		},
+		"pane2": {
+			"title": "What we solve",
+			"items": [
+				"Low data usability",
+				"Blind spots in productivity",
+				"Inefficient manual processes",
+				"Weak trust & unclear decisions",
+				"Static engagement & unused talent"
+			]
+		}
 	},
 	"solutions": {
 		"title": "Our Solutions",
 		"topics": [
 			{
-				"title": "Transformation Strategy & Governance",
-				"moto": "Driving organizational change with structured frameworks, digital tools, and expert-led delivery.",
-				"cta": "We combine strategy, tools, and execution to lead your transformation from idea to impact.",
-				"services": [
+				"title": "BI & Analytics",
+				"text": "Transforming raw data into actionable insights, enabling data-driven decisions to optimize performance and drive growth.",
+				"data": [
 					{
 						"icon": "lifecycle",
-						"title": "Continuous Improvement",
-						"text": "CI frameworks, Analytics, predictive maintenance & yield optimization"
+						"title": "Business Intelligence",
+						"text": "BI Tools and Platforms\nDashboard Development\nKey Performance Indicators (KPIs)\nData Warehousing\nReal-time BI"
 					},
 					{
 						"icon": "transformation",
-						"title": "Digital Transformation",
-						"text": "VOC/VOE platforms, Performance & OPEX models"
+						"title": "Data Visualization",
+						"text": "Visualization Techniques\nStorytelling with Data\nInteractive Dashboards\nVisualization Tools"
 					},
 					{
 						"icon": "handshake",
-						"title": "Corporate Governance",
-						"text": "Digital reward systems, Ideation platforms, and quality management"
+						"title": "Data Analysis",
+						"text": "Data Collection and Preparation\nStatistical Analysis\nData Mining\nText and Sentiment Analysis\nAnomaly Detection"
 					},
 					{
 						"icon": "management",
-						"title": "Project Management",
-						"text": "PMO tools, results tracking, capacity dashboards, and IT integration"
+						"title": "Predictive Analytics",
+						"text": "Predictive Modeling\nMachine Learning Algorithms\nTime Series Analysis\nRisk Assessment\nCustomer Behavior Prediction"
+					}
+				]
+			},
+			{
+				"title": "BI & Analytics",
+				"text": "Transforming raw data into actionable insights, enabling data-driven decisions to optimize performance and drive growth.",
+				"data": [
+					{
+						"icon": "lifecycle",
+						"title": "Business Intelligence",
+						"text": "BI Tools and Platforms\nDashboard Development\nKey Performance Indicators (KPIs)\nData Warehousing\nReal-time BI"
+					},
+					{
+						"icon": "transformation",
+						"title": "Data Visualization",
+						"text": "Visualization Techniques\nStorytelling with Data\nInteractive Dashboards\nVisualization Tools"
+					},
+					{
+						"icon": "handshake",
+						"title": "Data Analysis",
+						"text": "Data Collection and Preparation\nStatistical Analysis\nData Mining\nText and Sentiment Analysis\nAnomaly Detection"
+					},
+					{
+						"icon": "management",
+						"title": "Predictive Analytics",
+						"text": "Predictive Modeling\nMachine Learning Algorithms\nTime Series Analysis\nRisk Assessment\nCustomer Behavior Prediction"
+					}
+				]
+			},
+			{
+				"title": "BI & Analytics",
+				"text": "Transforming raw data into actionable insights, enabling data-driven decisions to optimize performance and drive growth.",
+				"data": [
+					{
+						"icon": "lifecycle",
+						"title": "Business Intelligence",
+						"text": "BI Tools and Platforms\nDashboard Development\nKey Performance Indicators (KPIs)\nData Warehousing\nReal-time BI"
+					},
+					{
+						"icon": "transformation",
+						"title": "Data Visualization",
+						"text": "Visualization Techniques\nStorytelling with Data\nInteractive Dashboards\nVisualization Tools"
+					},
+					{
+						"icon": "handshake",
+						"title": "Data Analysis",
+						"text": "Data Collection and Preparation\nStatistical Analysis\nData Mining\nText and Sentiment Analysis\nAnomaly Detection"
+					},
+					{
+						"icon": "management",
+						"title": "Predictive Analytics",
+						"text": "Predictive Modeling\nMachine Learning Algorithms\nTime Series Analysis\nRisk Assessment\nCustomer Behavior Prediction"
+					}
+				]
+			},
+			{
+				"title": "BI & Analytics",
+				"text": "Transforming raw data into actionable insights, enabling data-driven decisions to optimize performance and drive growth.",
+				"data": [
+					{
+						"icon": "lifecycle",
+						"title": "Business Intelligence",
+						"text": "BI Tools and Platforms\nDashboard Development\nKey Performance Indicators (KPIs)\nData Warehousing\nReal-time BI"
+					},
+					{
+						"icon": "transformation",
+						"title": "Data Visualization",
+						"text": "Visualization Techniques\nStorytelling with Data\nInteractive Dashboards\nVisualization Tools"
+					},
+					{
+						"icon": "handshake",
+						"title": "Data Analysis",
+						"text": "Data Collection and Preparation\nStatistical Analysis\nData Mining\nText and Sentiment Analysis\nAnomaly Detection"
+					},
+					{
+						"icon": "management",
+						"title": "Predictive Analytics",
+						"text": "Predictive Modeling\nMachine Learning Algorithms\nTime Series Analysis\nRisk Assessment\nCustomer Behavior Prediction"
 					}
 				]
 			}
 		]
 	},
 	"team": {
-		"title": "Meet the Mind Behind UMN",
-		"text": "At UMN, our greatest asset is our exceptional team of individuals who bring passion, expertise, and a collaborative spirit to every project. Together, we form a dynamic group dedicated to redefining the landscape of data solutions."
+		"title": "The Mind Behind UMN",
+		"text": "At the heart of UMN is a singular team, strategists, scientists, and creators bound by a fierce commitment: to turn complexity into competitive advantage. Led by Gil Gaspar, whose vision unites data science, change management and strategic thinking, we do not accept limits. We take on challenges that demand precision, creativity, and absolute discretion."
+	},
+	"contact-us": {},
+	"common": {
+		"contact-us": "Contact Us",
+		"book-call": "Book Call"
 	}
 }
