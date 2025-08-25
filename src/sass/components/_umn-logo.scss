@@ -1,0 +1,14 @@
+@use "../abstract/animations" as animations;
+.umn-logo {
+	width: 12vmax;
+	height: auto;
+
+	& > * {
+		width: 100%;
+		height: auto;
+	}
+
+	// @include animations.pop-in;
+	// animation-duration: 1s;
+	// animation-timing-function: ease-out;
+}

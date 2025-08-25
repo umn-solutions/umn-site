@@ -1,0 +1,36 @@
+@use "../abstract/colors" as colors;
+@use "../abstract/layout" as layouts;
+.about {
+	// border: 1px solid yellow;
+
+	&__scrollable {
+		height: 100%;
+		width: 100%;
+		// border: 1px solid greenyellow;
+		overflow: auto;
+		scroll-snap-type: y mandatory;
+
+		& > * {
+			scroll-snap-align: start;
+			scroll-snap-stop: always;
+			// border: 1px solid green;
+			height: 100%;
+			width: 50%;
+			margin: auto;
+			@include layouts.flex-col;
+			place-content: center;
+			place-items: center;
+		}
+	}
+
+	&__heading {
+		& > * {
+			display: flex;
+			gap: 1ch;
+		}
+
+		&--gold {
+			color: colors.$text-tertiary;
+		}
+	}
+}

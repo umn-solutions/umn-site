@@ -1,4 +1,20 @@
 @use "./base/reset";
-@use "./base/layout";
+@use "./base/base";
 @use "./abstract/typography";
 //
+@use "./components/umn-logo-text";
+@use "./components/umn-title";
+@use "./components/umn-pattern";
+@use "./components/carrousel";
+@use "./components/umn-logo";
+@use "./components/contact-btn";
+@use "./components/slider-card";
+//
+@use "./vendor/embla";
+//
+@use "./pages/landing";
+@use "./pages/about";
+@use "./pages/whatwedo";
+@use "./pages/solutions";
+@use "./pages/team";
+@use "./pages/contact-us";

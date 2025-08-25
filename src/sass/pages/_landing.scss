@@ -1,0 +1,25 @@
+@use "../abstract/animations" as animations;
+@use "../abstract/layout" as layouts;
+.landing {
+	border: 1px solid red;
+
+	
+	&__scroll-down {
+		position: absolute;
+		bottom: 12.5vh;
+
+		@include layouts.flex-col;
+		@include animations.glow;
+		animation-delay: 3s;
+		animation-duration: 2.5s;
+
+		font-size: 0.75rem;
+		* {
+			font-size: inherit;
+		}
+
+		& svg {
+			width: 1.5em;
+		}
+	}
+}

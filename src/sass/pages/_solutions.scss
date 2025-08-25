@@ -1,0 +1,23 @@
+@use "../abstract/colors" as colors;
+section.solutions {
+	background: colors.blueGrad1();
+
+	& > * {
+		z-index: 1;
+	}
+	.umn-pattern {
+		position: absolute;
+		z-index: 0;
+	}
+
+	.umn-title {
+		align-self: flex-start;
+		margin-left: 3.5ch;
+	}
+
+	.carousel {
+		height: 80%;
+		width: 100%;
+	}
+	
+}

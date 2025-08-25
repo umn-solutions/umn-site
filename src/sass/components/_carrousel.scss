@@ -1,0 +1,136 @@
+@use "../abstract/colors" as colors;
+@use "../abstract/media-queries" as media-queries;
+.carrousel-item {
+	border-radius: 80px;
+	background: colors.lightGrad();
+	padding: 3em 4em;
+	display: flex;
+	flex-direction: column;
+	place-content: center;
+	gap: 1em;
+	font-size: 0.8rem;
+	&__title {
+		font-weight: bold;
+		text-align: start;
+	}
+	&__text {
+		width: 90%;
+	}
+	&__data {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
+		position: relative;
+		margin: 0 4%;
+
+		@mixin borderLine() {
+			content: "";
+			display: block;
+			position: absolute;
+			background: colors.$secondary500;
+			border-radius: 50px;
+		}
+		$border-thickness: 2px;
+		&::after {
+			@include borderLine();
+			height: 100%;
+			width: $border-thickness;
+			top: 0;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+		&::before {
+			@include borderLine();
+			width: 100%;
+			height: $border-thickness;
+			left: 0;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+
+		@include media-queries.mobile-portrait {
+			margin: 0;
+			grid-template-columns: 1fr;
+			grid-template-rows: auto;
+			grid-area: 0.5em;
+			height: 40vh;
+			overflow: auto;
+			scrollbar-width: 0.33rem;
+			-ms-overflow-style: auto;
+			&::before,
+			&::after {
+				display: none;
+			}
+			& > * {
+				border-bottom: 2px solid colors.$secondary500;
+			}
+			& > *:last-child {
+				border-bottom: none;
+			}
+			/* For the entire scrollbar */
+			&::-webkit-scrollbar {
+				width: 0.33rem !important; /* Width of the scrollbar */
+				height: 0.33rem !important; /* Height for horizontal scrollbar */
+			}
+
+			/* For the track (background of the scrollbar) */
+			&::-webkit-scrollbar-track {
+				background: rgba(
+					colors.$tertiary500,
+					0.5
+				); /* Light background color for track */
+				border-radius: 10px; /* Rounded corners for the track */
+				margin: 4px;
+			}
+
+			/* For the thumb (the draggable part of the scrollbar) */
+			&::-webkit-scrollbar-thumb {
+				background: rgba(
+					colors.$light,
+					0.75
+				); /* Darker color for the thumb */
+				border-radius: 10px; /* Rounded corners for the thumb */
+				cursor: grab;
+			}
+
+			/* For the thumb on hover (when the user hovers over the scrollbar) */
+			&::-webkit-scrollbar-thumb:hover {
+				background: rgba(
+					colors.$tertiary500,
+					1
+				); /* Darker color when hovered */
+			}
+
+			/* For the scrollbar corner (where horizontal and vertical scrollbars meet) */
+			&::-webkit-scrollbar-corner {
+				background: #ddd;
+			}
+		}
+	}
+	&__data-item {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5em;
+		place-items: start;
+		place-content: start;
+		padding: 0.75em;
+		// font-size: 0.8em;
+		& * {
+			font-size: 0.8rem;
+		}
+		&__title {
+			font-size: 1rem;
+			font-weight: bold;
+			text-align: start;
+
+			@include media-queries.mobile-portrait {
+				font-size: initial;
+			}
+		}
+	}
+
+	@include media-queries.mobile-portrait {
+		padding: 2em;
+		border-radius: 35px;
+	}
+}

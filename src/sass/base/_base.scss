@@ -1,0 +1,42 @@
+@use "../abstract/colors" as colors;
+@use "../abstract/layout" as layouts;
+
+html {
+	height: 100%;
+	overflow: hidden;
+}
+body {
+	background-color: colors.$dark;
+	scroll-behavior: smooth;
+	overflow: auto;
+	height: 100%;
+	scroll-snap-type: y mandatory;
+}
+.main-section {
+	scroll-behavior: smooth;
+	scroll-snap-align: center;
+	scroll-snap-stop: always;
+	height: 100vh;
+	padding-top: 10vh;
+	@include layouts.flex-col;
+	place-content: center;
+	place-items: center;
+
+	position: relative;
+	overflow: hidden;
+}
+
+/* Global: remove scrollbars everywhere */
+body {
+	/* Firefox */
+	scrollbar-width: none;
+	/* IE 10+ (legacy Edge) */
+	-ms-overflow-style: none;
+}
+
+/* Chrome / Safari / new Edge */
+body::-webkit-scrollbar {
+	width: 0;
+	height: 0;
+	background: transparent; /* optional */
+}

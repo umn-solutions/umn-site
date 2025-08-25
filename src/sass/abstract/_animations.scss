@@ -1,13 +1,14 @@
 //============================================ TRANSITIONS
-@mixin button {
+@mixin button($transform-props: "") {
 	transition: all 0.2s ease-in-out;
+	transform-origin: 50% 50%;
 	cursor: pointer;
 	&:hover {
-		transform: scale(0.95);
+		transform: scale(0.95) $transform-props;
 	}
 
 	&:active {
-		transform: scale(0.85);
+		transform: scale(0.85) $transform-props;
 	}
 }
 
@@ -59,20 +60,4 @@
 	animation-timing-function: ease-in-out;
 	animation-fill-mode: both;
 	animation-direction: alternate;
-	// animation-delay: 1s;
-}
-
-@keyframes slide-from-right {
-	from {
-		transform: translateX(100%);
-		// opacity: 0;
-	}
-	to {
-		transform: translateX(0);
-		// opacity: 1;
-	}
-}
-
-@mixin slide-from-right {
-	@include base-anim(slide-from-right);
 }

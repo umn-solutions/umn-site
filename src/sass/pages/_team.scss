@@ -1,0 +1,63 @@
+@use "../abstract/colors" as colors;
+@use "../abstract/media-queries" as media-queries;
+.team {
+	background-color: colors.$light;
+	padding-left: 5%;
+	display: grid;
+	grid-template-columns: minmax(auto, 40%) max-content;
+	grid-template-rows: 30% 70%;
+	grid-template-areas:
+		"title photo"
+		"text photo";
+
+	gap: 1em;
+	.umn-title {
+	}
+	&__title {
+		align-self: end;
+		justify-self: start;
+		margin-bottom: 1.5em;
+	}
+
+	&__text-wrapper {
+		align-self: start;
+		grid-area: text;
+	}
+	&__text {
+		color: colors.$text-secondary;
+		max-width: 50ch;
+		font-size: 1.75rem;
+		padding-left: 3em;
+	}
+	&__photo {
+		grid-area: photo;
+		height: 100%;
+		width: auto;
+		place-self: end;
+
+		& img {
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+	@include media-queries.mobile-portrait {
+		display: flex;
+		place-content: center;
+		place-items: center;
+		&__title {
+			margin: 0;
+			margin-top: auto;
+			align-self: start;
+		}
+		&__text {
+			font-size: 1.1rem;
+			padding: 0 2em;
+			place-self: center;
+		}
+		&__photo {
+			height: 50vh;
+			margin-top: auto;
+		}
+	}
+}

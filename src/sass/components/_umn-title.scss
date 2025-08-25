@@ -1,0 +1,35 @@
+@use "../abstract/colors" as colors;
+@use "../abstract/media-queries" as media-queries;
+.umn-title {
+	color: colors.$text-tertiary;
+	display: flex;
+	align-items: center;
+	gap: 0.5ch;
+	$size: 2em;
+	font-size: $size;
+	&__abstract {
+		margin-top: 0.25em;
+		$factor: 0.65;
+		width: $size * $factor;
+		height: $size * $factor;
+		content: "";
+		display: inline-block;
+		clip-path: polygon(50% 0, 100% 0, 100% 30%, 35% 90%, 0 50%);
+	}
+	&--dark {
+		color: colors.$secondary400;
+		.umn-title__abstract {
+			background-color: colors.$primary500;
+		}
+	}
+	&--light {
+		color: colors.$text-light;
+		.umn-title__abstract {
+			background-color: colors.$secondary400;
+		}
+	}
+
+	@include media-queries.mobile-portrait {
+		font-size: 2rem;
+	}
+}

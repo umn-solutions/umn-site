@@ -41,7 +41,7 @@ $blueGrad2: radial-gradient(rgba($primary500, 0.85), rgba($primary600, 0.85));
 $blueGrad3: linear-gradient(-35deg, $primary900, $primary600);
 $blueGrad4: linear-gradient($primary400, $primary600);
 //FIX: bluegrad1 and bluegrad4 are equal lol with functions theyre redundant
-@function blueGrad1($opacity: 1, $angle: -35deg) {
+@function blueGrad1($opacity: 1, $angle: 35deg) {
 	@return linear-gradient(
 		$angle,
 		rgba($primary600, $opacity),
@@ -55,7 +55,13 @@ $blueGrad4: linear-gradient($primary400, $primary600);
 		rgba($primary600, $opacity)
 	);
 }
-
+@function lightGrad($opacity: 0.25, $angle: 0deg) {
+	@return linear-gradient(
+		$angle,
+		rgba($primary050, $opacity),
+		rgba($primary150, $opacity)
+	);
+}
 $lightBlueGrad: linear-gradient(
 	90deg,
 	rgba($primary050, 0.35),

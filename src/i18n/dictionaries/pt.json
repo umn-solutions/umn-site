@@ -1,0 +1,68 @@
+{
+	"landing": {
+		"scroll-down": "Scroll Down"
+	},
+	"about": {
+		"heading-text": ["Unveiling Data", "delivering Excellence"],
+		"text": [
+			"Fueled by purpose and relentless curiosity, we fearlessly dive into complex datasets, creating technological solutions that bring life to the numbers.",
+			"We uncover nuanced patterns and derive actionable insights, transforming raw data into tangible value and driving impactful decisions."
+		]
+	},
+	"whatwedo": {
+		"title": "What we do",
+		"topics": [
+			{
+				"title": "Strategic Digital Transformation"
+			},
+			{
+				"title": "Big Data & Predictive Analytics"
+			},
+			{
+				"title": "Automation & AI Integration"
+			},
+			{
+				"title": "Performance & Service Perception Platforms"
+			},
+			{
+				"title": "Continuous improvements & Workforce Enablement"
+			}
+		]
+	},
+	"solutions": {
+		"title": "Our Solutions",
+		"topics": [
+			{
+				"title": "Transformation Strategy & Governance",
+				"moto": "Driving organizational change with structured frameworks, digital tools, and expert-led delivery.",
+				"cta": "We combine strategy, tools, and execution to lead your transformation from idea to impact.",
+				"services": [
+					{
+						"icon": "lifecycle",
+						"title": "Continuous Improvement",
+						"text": "CI frameworks, Analytics, predictive maintenance & yield optimization"
+					},
+					{
+						"icon": "transformation",
+						"title": "Digital Transformation",
+						"text": "VOC/VOE platforms, Performance & OPEX models"
+					},
+					{
+						"icon": "handshake",
+						"title": "Corporate Governance",
+						"text": "Digital reward systems, Ideation platforms, and quality management"
+					},
+					{
+						"icon": "management",
+						"title": "Project Management",
+						"text": "PMO tools, results tracking, capacity dashboards, and IT integration"
+					}
+				]
+			}
+		]
+	},
+	"team": {
+		"title": "Meet the Mind Behind UMN",
+		"text": "At UMN, our greatest asset is our exceptional team of individuals who bring passion, expertise, and a collaborative spirit to every project. Together, we form a dynamic group dedicated to redefining the landscape of data solutions."
+	}
+}

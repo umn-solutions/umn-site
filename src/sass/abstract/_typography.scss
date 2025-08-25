@@ -14,10 +14,12 @@ $base-h: 2.35rem;
 		$size: $base-h * $phi * (1 - $i * 0.15);
 		font-size: clamp($size * 0.75, 2vmax, $size * 1);
 		text-align: center;
+		font-weight: 400;
 	}
 }
 
 * {
+	color: colors.$light;
 	font-family: var(--font-aptos);
 	font-size: 1rem;
 	user-select: none;
@@ -25,6 +27,7 @@ $base-h: 2.35rem;
 
 button,
 a {
+	color: colors.$dark;
 	font-family: var(--font-mescla);
 	font-size: 1.15rem;
 }

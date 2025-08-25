@@ -2,8 +2,8 @@ import localFont from "next/font/local";
 
 export const aptos = localFont({
 	src: [
-		{ path: "./fonts/Aptos-Regular.woff2", weight: "400", style: "normal" },
-		{ path: "./fonts/Aptos-Bold.woff2", weight: "700", style: "normal" }, // was 900; likely 700
+		{ path: "./Aptos.ttf", weight: "400", style: "normal" },
+		{ path: "./Aptos-Bold.ttf", weight: "700", style: "normal" }, 
 	],
 	display: "swap",
 	preload: true,
@@ -14,7 +14,7 @@ export const aptos = localFont({
 export const mescla = localFont({
 	src: [
 		{
-			path: "./fonts/Mescla-Regular.woff2",
+			path: "./mescla_bold.ttf",
 			weight: "400",
 			style: "normal",
 		},

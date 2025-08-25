@@ -1,0 +1,7 @@
+@use "../abstract/colors" as colors;
+section.whatwedo {
+	background-color: colors.$light;
+	place-content: start;
+	place-items: start;
+	padding-top: 0;
+}

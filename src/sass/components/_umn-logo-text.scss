@@ -1,0 +1,26 @@
+@use "../abstract/colors" as colors;
+@use "../abstract/media-queries" as media-queries;
+.umn-logo-text {
+	$offset: 2.5vmin;
+	@include media-queries.mobile-portrait {
+		$offset: 3.5vmin;
+	}
+	font-family: mescla;
+	position: fixed;
+	font-size: 2rem;
+	top: $offset;
+	left: $offset;
+	z-index: 100;
+	height: 5vmin;
+	transition: all 0.15s ease-in;
+	& img {
+		height: 100%;
+		width: auto;
+	}
+	&--light {
+		color: colors.$text-light;
+	}
+	&--dark {
+		color: colors.$text-dark;
+	}
+}
