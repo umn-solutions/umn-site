@@ -3,6 +3,7 @@ import UMNLogoText from "@/components/misc/UMNLogoText";
 import { DictionaryContentType } from "@/i18n/i18n.config";
 import Image from "next/image";
 import EyeBg from "@/media/eye-bg.png";
+import FadeInImage from "@/components/containers/FadeInImage";
 export default function About({
 	dictionary,
 }: {
@@ -10,15 +11,19 @@ export default function About({
 }) {
 	return (
 		<MainSection className="about">
-			<Image
+			<FadeInImage
 				src={EyeBg}
-				alt=""
 				className="about__bg"
 			/>
 			<div className="about__scrollable">
 				<Heading dictionary={dictionary["heading-text"]} />
 				{dictionary.text.map((text, i) => (
-					<p key={`about-text-${i}`} className="about__text">{text}</p>
+					<p
+						key={`about-text-${i}`}
+						className="about__text"
+					>
+						{text}
+					</p>
 				))}
 			</div>
 		</MainSection>
