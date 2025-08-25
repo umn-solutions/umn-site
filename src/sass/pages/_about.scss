@@ -1,29 +1,86 @@
 @use "../abstract/colors" as colors;
 @use "../abstract/layout" as layouts;
+@use "../abstract/media-queries" as media-queries;
+
+@keyframes scalling-glow {
+	50% {
+		transform: rotate(90deg) scale(1.05);
+		filter: contrast(1) saturate(0.95) blur(2px);
+	}
+}
+@keyframes s2-no-rot {
+	50% {
+		transform: scale(1.05);
+		filter: contrast(1) saturate(0.95) blur(2px);
+	}
+}
+
 .about {
-	// border: 1px solid yellow;
+	position: relative;
+	/* Firefox */
+	padding-top: 0;
+
+	&__bg {
+		position: absolute;
+		inset: 0;
+		margin: auto;
+		z-index: -1;
+		transform: rotate(90deg);
+
+		width: 50%;
+		height: auto;
+		opacity: 0.5;
+
+		filter: contrast(1.25) saturate(1.05) blur(0.5px);
+		animation: scalling-glow infinite 15s both linear;
+		@include media-queries.mobile-portrait {
+			width: 100%;
+			height: auto;
+			transform: rotate(0deg);
+			animation-name: s2-no-rot;
+		}
+	}
 
 	&__scrollable {
 		height: 100%;
-		width: 100%;
+		width: 50%;
 		// border: 1px solid greenyellow;
 		overflow: auto;
 		scroll-snap-type: y mandatory;
 
+		scrollbar-width: none;
+		/* IE 10+ (legacy Edge) */
+		-ms-overflow-style: none;
+
+		/* Chrome / Safari / new Edge */
+		&::-webkit-scrollbar {
+			width: 0;
+			height: 0;
+			background: transparent; /* optional */
+		}
+
 		& > * {
 			scroll-snap-align: start;
 			scroll-snap-stop: always;
-W			// border: 1px solid green;
+			// border: 1px solid green;
 			height: 100%;
-			width: 50%;
+			padding: 1.5em;
+			padding-left: 3em;
 			margin: auto;
 			@include layouts.flex-col;
 			place-content: center;
 			place-items: center;
 		}
+		@include media-queries.mobile-portrait {
+			width: 100%;
+		}
 	}
 
 	&__heading {
+		& * {
+			font-weight: bold;
+			text-shadow: 2px 2px 20px rgba(colors.$light, 0.25);
+		}
 		& > * {
 			display: flex;
 			gap: 1ch;
@@ -32,5 +89,8 @@ W			// border: 1px solid green;
 		&--gold {
 			color: colors.$text-tertiary;
 		}
+	}
+	&__text {
+		font-size: 1.5rem;
 	}
 }
