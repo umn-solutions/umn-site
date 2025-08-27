@@ -1,10 +1,7 @@
-import MainSection from "@/components/containers/MainSection";
-import UMNLogoText from "@/components/misc/UMNLogoText";
-import { DictionaryContentType } from "@/i18n/i18n.config";
-import Image from "next/image";
-import EyeBg from "@/media/eye-bg.png";
 import FadeInImage from "@/components/containers/FadeInImage";
-import StyledText from "@/components/misc/StyledText";
+import MainSection from "@/components/containers/MainSection";
+import { DictionaryContentType } from "@/i18n/i18n.config";
+import EyeBg from "@/media/eye-bg.png";
 export default function About({
 	dictionary,
 }: {
@@ -39,16 +36,16 @@ export default function About({
 
 				<div className="about__text">
 					<span>
-						"We turn complex data and automation into systems that{" "}
+						We turn complex data and automation into systems that{" "}
 						<span className="umn_gold">sharpen</span> decisions,{" "}
 						<span className="umn_gold">elevate</span> performance
-						and <span className="umn_gold">unlock</span> potential."
+						and <span className="umn_gold">unlock</span> potential.
 					</span>
 				</div>
 
 				<div className="about__text">
 					<span>
-						"Every project is tailored with{" "}
+						Every project is tailored with{" "}
 						<span className="umn_gold"></span>precision and driven
 						by <span className="umn_gold">purpose</span>, solving{" "}
 						<span className="umn_gold">challenges that matter</span>{" "}
@@ -59,8 +56,8 @@ export default function About({
 
 				<div className="about__text">
 					<span>
-						"At the center, always{" "}
-						<span className="umn_gold">Human</span>"
+						{"\"At the center, always "}
+						<span className="umn_gold">{"Human"}</span>{"\""}
 					</span>
 				</div>
 			</div>
