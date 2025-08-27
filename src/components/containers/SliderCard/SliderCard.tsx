@@ -25,7 +25,7 @@ export default function SliderCard({ pane1, pane2 }: SliderCardProps) {
 					window.innerWidth) *
 				100;
 
-			cardRef.current.style.width = `${val}%`;
+			cardRef.current.style.width = `${Math.max(25,Math.min(val,95))}%`;
 		}
 	}, [mousePos]);
 

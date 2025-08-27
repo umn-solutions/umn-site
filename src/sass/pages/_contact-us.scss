@@ -27,7 +27,7 @@
 		font-size: $size;
 		&:last-child {
 			font-size: $size * 0.85;
-			font-style: italic;
+			// font-style: italic;
 		}
 	}
 	&__bg {

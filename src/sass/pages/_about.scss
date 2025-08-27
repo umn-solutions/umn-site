@@ -29,8 +29,7 @@
 		width: 100%;
 		height: 100%;
 		object-fit: cover;
-		opacity: 0.5;
-
+		opacity: 0.5 !important;
 		filter: contrast(1.25) saturate(1.05);
 		animation: scalling-glow infinite 15s both linear;
 		@include media-queries.mobile-portrait {
@@ -42,7 +41,7 @@
 
 	&__scrollable {
 		height: 100%;
-		width: 50%;
+		width: 40%;
 		// border: 1px solid greenyellow;
 
 		overflow: auto;
@@ -65,7 +64,7 @@
 			// border: 1px solid green;
 			height: 100%;
 			padding: 1.5em;
-			padding-left: 3em;
+			// padding-left: 3em;
 			margin: auto;
 			@include layouts.flex-col;
 			place-content: center;
@@ -96,12 +95,16 @@
 		place-content: center;
 		place-items: center;
 		& > * {
-			background: colors.grayGrad2($opacity: 0.4, $angle: 125);
-			box-shadow: inset 2px 2px 20px 2px rgba(colors.$primary150, 0.25);
-			backdrop-filter: blur(5px);
+			// background: colors.grayGrad2($opacity: 0.4, $angle: 125);
+			// box-shadow: inset 2px 2px 20px 2px rgba(colors.$primary150, 0.25);
+			// backdrop-filter: blur(5px);
 			font-size: inherit;
 			padding: 0.5em;
 			border-radius: 10px;
+		}
+		@include media-queries.mobile-portrait {
+			font-size: 1.5rem;
+			text-align: center;
 		}
 	}
 }

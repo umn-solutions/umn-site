@@ -56,8 +56,8 @@ export default function About({
 
 				<div className="about__text">
 					<span>
-						{"\"At the center, always "}
-						<span className="umn_gold">{"Human"}</span>{"\""}
+						At the center, always
+						<span className="umn_gold"> Human</span>
 					</span>
 				</div>
 			</div>
