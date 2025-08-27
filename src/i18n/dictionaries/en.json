@@ -1,33 +1,32 @@
 {
-	"landing": {
-		"scroll-down": "Scroll Down"
-	},
 	"about": {
 		"heading-text": ["Unveiling Data", "delivering Excellence"],
 		"text": [
-			"Fueled by purpose and relentless curiosity, we fearlessly dive into complex datasets, creating technological solutions that bring life to the numbers.",
-			"We uncover nuanced patterns and derive actionable insights, transforming raw data into tangible value and driving impactful decisions."
+			"Building a future where technology <breakpoint><umn_gold>serves<breakpoint>, data <breakpoint><umn_gold>guides<breakpoint>, and humans <breakpoint><umn_gold>lead the way<breakpoint>.",
+			"We turn complex data and automation into systems that <breakpoint><umn-gold>sharpen<breakpoint> decisions, <breakpoint><umn-gold>elevate<breakpoint> performance and <breakpoint><umn-gold>unlock<breakpoint> potential.",
+			"Every project is tailored with <breakpoint><umn-gold>precision<breakpoint> and driven by <breakpoint><umn-gold>purpose<breakpoint>, solving <breakpoint><umn-gold>challenges that matter<breakpoint> and creating <breakpoint><umn-gold>futures that last<breakpoint>. ",
+			"At the center, always <breakpoint><umn_gold>Human<breakpoint>"
 		]
 	},
 	"whatwedo": {
 		"pane1": {
-			"title": "What we do",
+			"title": "What We Do",
 			"items": [
-				"Strategic Digital Change",
-				"Big Data & Predictive Analytics",
-				"Automation with AI",
-				"Performance & Experience Platforms",
-				"Ongoing Improvement & Workforce Growth"
+				"Digital & Business Transformation",
+				"Data Intelligence",
+				"Process Intelligence & Automation",
+				"Operational Excellence & Continuous Improvement",
+				"Experience & Performance Solutions"
 			]
 		},
 		"pane2": {
-			"title": "What we solve",
+			"title": "What We Solve",
 			"items": [
-				"Low data usability",
-				"Blind spots in productivity",
-				"Inefficient manual processes",
-				"Weak trust & unclear decisions",
-				"Static engagement & unused talent"
+				"Unclear productivity & operational blind spots",
+				"Low data usability & disconnected insights",
+				"High inefficiencies & manual processes",
+				"Weak internal trust & lack of decision-making clarity",
+				"Static engagement & underused talent"
 			]
 		}
 	},
@@ -142,9 +141,17 @@
 	},
 	"team": {
 		"title": "The Mind Behind UMN",
-		"text": "At the heart of UMN is a singular team, strategists, scientists, and creators bound by a fierce commitment: to turn complexity into competitive advantage. Led by Gil Gaspar, whose vision unites data science, change management and strategic thinking, we do not accept limits. We take on challenges that demand precision, creativity, and absolute discretion."
+		"text": [
+			"Our strength is hUMaN. We are a collective of strategists, scientists, and creators bound by a single conviction: <umn-gold>technology should serve people, not replace them.",
+			"Led by Gil Gaspar, whose vision unites data mastery with human insight, we embrace only challenges that demand precision, creativity, and absolute discretion.</umn-gold>"
+		]
 	},
-	"contact-us": {},
+	"contact-us": {
+		"cta": [
+			"We don’t seek clients. We seek <umn-gold>visionary partners.</umn-gold>",
+			"If you believe your next challenge deserves a solution designed with Technology in Service of Humans"
+		]
+	},
 	"common": {
 		"contact-us": "Contact Us",
 		"book-call": "Book Call"

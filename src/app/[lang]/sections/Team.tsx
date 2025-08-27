@@ -35,7 +35,18 @@ export default function Team({
 				{...applyDelay(0.55, fadeInMotionProps)}
 				className="team__text-wrapper"
 			>
-				<p className="team__text">{dictionary.text}</p>
+				<p className="team__text">
+					Our strength is hUMaN. We are a collective of strategists,
+					scientists, and creators bound by a single conviction:{" "}
+					<span className="umn_gold">
+						 technology should serve people, not replace them.
+					</span>
+				</p>
+				<p className="team__text">
+					Led by Gil Gaspar, whose vision unites data mastery with
+					human insight, we embrace only challenges that demand
+					precision, creativity, and absolute discretion.
+				</p>
 			</motion.div>
 			<motion.div
 				{...applyDelay(0.65, fadeSlideInMotionProps)}

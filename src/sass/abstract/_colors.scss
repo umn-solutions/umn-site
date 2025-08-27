@@ -88,7 +88,7 @@ $grayGrad2: linear-gradient(rgba($primary050, 1), $primary900);
 @function grayGrad2($opacity: 1, $angle: 180) {
 	@return linear-gradient(
 		#{$angle}deg,
-		rgba($primary150, $opacity),
-		rgba($primary900, $opacity)
+		rgba($primary400, $opacity),
+		rgba($primary600, $opacity)
 	);
 }

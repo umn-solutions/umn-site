@@ -16,18 +16,22 @@
 	&__title {
 		align-self: end;
 		justify-self: start;
-		margin-bottom: 1.5em;
+		margin-bottom: 1em;
 	}
 
 	&__text-wrapper {
+		margin-top: -1em;
 		align-self: start;
 		grid-area: text;
 	}
 	&__text {
 		color: colors.$text-secondary;
-		max-width: 50ch;
-		font-size: 1.5rem;
-		padding-left: 3em;
+		max-width: 55ch;
+		font-size: 1.40rem;
+		padding-left: 2em;
+			&:first-child{
+				margin-bottom: 1.5em;
+			}
 	}
 	&__photo {
 		grid-area: photo;

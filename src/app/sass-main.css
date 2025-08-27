@@ -224,9 +224,22 @@ a {
   font-size: 1.15rem;
 }
 
+.styled-text > * {
+  font-size: inherit;
+  display: inline-block;
+  width: fit-content;
+}
+
 .umn_gold {
   font-weight: bold;
   color: #e4b03b;
+  font-size: inherit;
+}
+
+.umn_gray {
+  font-weight: bold;
+  color: #fff;
+  font-size: inherit;
 }
 
 .umn-logo-text {
@@ -820,7 +833,7 @@ a {
   justify-content: center;
   align-items: center;
   position: absolute;
-  bottom: 5%;
+  bottom: 4%;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -889,12 +902,6 @@ a {
 
 @keyframes scalling-glow {
   50% {
-    transform: rotate(90deg) scale(1.05);
-    filter: contrast(1) saturate(0.95) blur(2px);
-  }
-}
-@keyframes s2-no-rot {
-  50% {
     transform: scale(1.05);
     filter: contrast(1) saturate(0.95) blur(2px);
   }
@@ -906,22 +913,20 @@ a {
 }
 .about__bg {
   position: absolute;
-  inset: 0;
   margin: auto;
   z-index: -1;
-  transform: rotate(90deg);
-  width: 50%;
-  height: auto;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   opacity: 0.5;
-  filter: contrast(1.25) saturate(1.05) blur(0.5px);
+  filter: contrast(1.25) saturate(1.05);
   animation: scalling-glow infinite 15s both linear;
 }
 @media screen and (max-width: 1000px) {
   .about__bg {
-    width: 100%;
-    height: auto;
-    transform: rotate(0deg);
-    animation-name: s2-no-rot;
+    width: auto;
+    height: 100%;
+    object-fit: cover;
   }
 }
 .about__scrollable {
@@ -969,7 +974,18 @@ a {
   color: #e4b03b;
 }
 .about__text {
-  font-size: 1.5rem;
+  font-size: 2rem;
+  display: flex;
+  place-content: center;
+  place-items: center;
+}
+.about__text > * {
+  background: linear-gradient(125deg, rgba(7.0238095238, 99.7380952381, 169.9761904762, 0.4), rgba(2.9761904762, 42.2619047619, 72.0238095238, 0.4));
+  box-shadow: inset 2px 2px 20px 2px rgba(180.0952380952, 220.9523809524, 251.9047619048, 0.25);
+  backdrop-filter: blur(5px);
+  font-size: inherit;
+  padding: 0.5em;
+  border-radius: 10px;
 }
 
 section.whatwedo {
@@ -977,6 +993,9 @@ section.whatwedo {
   place-content: start;
   place-items: start;
   padding-top: 0;
+}
+section.whatwedo .slider-card__content {
+  margin-top: -3em;
 }
 
 section.solutions {
@@ -1009,17 +1028,21 @@ section.solutions .carousel {
 .team__title {
   align-self: end;
   justify-self: start;
-  margin-bottom: 1.5em;
+  margin-bottom: 1em;
 }
 .team__text-wrapper {
+  margin-top: -1em;
   align-self: start;
   grid-area: text;
 }
 .team__text {
   color: #054779;
-  max-width: 50ch;
-  font-size: 1.5rem;
-  padding-left: 3em;
+  max-width: 55ch;
+  font-size: 1.4rem;
+  padding-left: 2em;
+}
+.team__text:first-child {
+  margin-bottom: 1.5em;
 }
 .team__photo {
   grid-area: photo;
@@ -1058,13 +1081,39 @@ section.solutions .carousel {
     filter: blur(0px) contrast(1.25);
   }
 }
+.contact-us .umn-logo {
+  margin-bottom: 1em;
+}
+@media screen and (max-width: 1000px) {
+  .contact-us .umn-logo {
+    width: 20vmax;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .contact-us {
+    gap: 0.5em;
+  }
+}
+.contact-us__cta {
+  text-align: center;
+  font-size: 1.5rem;
+}
+@media screen and (max-width: 1000px) {
+  .contact-us__cta {
+    width: 90%;
+  }
+}
+.contact-us__cta:last-child {
+  font-size: 1.275rem;
+  font-style: italic;
+}
 .contact-us__bg {
   position: absolute;
   top: 50%;
   left: 50%;
   height: 100%;
   transform: translate(-50%, -50%);
-  filter: blur(25px) contrast(1.5);
+  filter: blur(2px) contrast(1.5);
   opacity: 0.25;
   animation: blurry 10s ease-in-out infinite both;
   z-index: -1;

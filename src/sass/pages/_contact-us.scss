@@ -1,3 +1,4 @@
+@use "../abstract/media-queries" as media-queries;
 @keyframes blurry {
 	50% {
 		filter: blur(0px) contrast(1.25);
@@ -5,13 +6,37 @@
 }
 
 .contact-us {
+	.umn-logo {
+		margin-bottom: 1em;
+
+		@include media-queries.mobile-portrait {
+			width: 20vmax;
+		}
+	}
+
+	@include media-queries.mobile-portrait {
+		gap: 0.5em;
+	}
+	&__cta {
+		$size: 2rem;
+		text-align: center;
+		@include media-queries.mobile-portrait {
+			$size: 1.5rem;
+			width: 90%;
+		}
+		font-size: $size;
+		&:last-child {
+			font-size: $size * 0.85;
+			font-style: italic;
+		}
+	}
 	&__bg {
 		position: absolute;
 		top: 50%;
 		left: 50%;
 		height: 100%;
 		transform: translate(-50%, -50%);
-		filter: blur(25px) contrast(1.5);
+		filter: blur(2px) contrast(1.5);
 		opacity: 0.25;
 		animation: blurry 10s ease-in-out infinite both;
 		z-index: -1;

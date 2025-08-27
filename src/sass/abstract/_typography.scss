@@ -31,7 +31,26 @@ a {
 	font-family: var(--font-mescla);
 	font-size: 1.15rem;
 }
+
+//============================ styled text
+.styled-text {
+	& > * {
+		font-size: inherit;
+		display: inline-block;
+		width: fit-content;
+		// margin-left: 1ch;
+		// &:first-child {
+		// 	margin-right: 0;
+		// }
+	}
+}
 .umn_gold {
 	font-weight: bold;
 	color: colors.$text-tertiary;
+	font-size: inherit;
+}
+.umn_gray {
+	font-weight: bold;
+	color: #fff;
+	font-size: inherit;
 }

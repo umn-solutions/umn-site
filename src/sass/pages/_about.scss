@@ -4,16 +4,16 @@
 
 @keyframes scalling-glow {
 	50% {
-		transform: rotate(90deg) scale(1.05);
-		filter: contrast(1) saturate(0.95) blur(2px);
-	}
-}
-@keyframes s2-no-rot {
-	50% {
 		transform: scale(1.05);
 		filter: contrast(1) saturate(0.95) blur(2px);
 	}
 }
+// @keyframes s2-no-rot {
+// 	50% {
+// 		transform: scale(1.05);
+// 		filter: contrast(1) saturate(0.95) blur(2px);
+// 	}
+// }
 
 .about {
 	position: relative;
@@ -22,22 +22,21 @@
 
 	&__bg {
 		position: absolute;
-		inset: 0;
 		margin: auto;
 		z-index: -1;
-		transform: rotate(90deg);
+		// transform: rotate(90deg);
 
-		width: 50%;
-		height: auto;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
 		opacity: 0.5;
 
-		filter: contrast(1.25) saturate(1.05) blur(0.5px);
+		filter: contrast(1.25) saturate(1.05);
 		animation: scalling-glow infinite 15s both linear;
 		@include media-queries.mobile-portrait {
-			width: 100%;
-			height: auto;
-			transform: rotate(0deg);
-			animation-name: s2-no-rot;
+			width: auto;
+			height: 100%;
+			object-fit: cover;
 		}
 	}
 
@@ -45,6 +44,7 @@
 		height: 100%;
 		width: 50%;
 		// border: 1px solid greenyellow;
+
 		overflow: auto;
 		scroll-snap-type: y mandatory;
 
@@ -91,6 +91,17 @@
 		}
 	}
 	&__text {
-		font-size: 1.5rem;
+		font-size: 2rem;
+		display: flex;
+		place-content: center;
+		place-items: center;
+		& > * {
+			background: colors.grayGrad2($opacity: 0.4, $angle: 125);
+			box-shadow: inset 2px 2px 20px 2px rgba(colors.$primary150, 0.25);
+			backdrop-filter: blur(5px);
+			font-size: inherit;
+			padding: 0.5em;
+			border-radius: 10px;
+		}
 	}
 }
