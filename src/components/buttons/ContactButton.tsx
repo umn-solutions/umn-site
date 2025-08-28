@@ -12,9 +12,8 @@ export default function ContactButton({
 				{dictionary["contact-us"]}
 			</span>
 			<a
-				// href="mailto:info@umnsolutions.net"
-				href="#"
-				// target="_blank"
+				href="mailto:umn.infocontact@gmail.com?subject=Partnership%20Proposal"
+				target="_blank"
 				className="contact-btn__book"
 			>
 				{PhoneLineIcon}
