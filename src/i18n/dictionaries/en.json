@@ -35,105 +35,105 @@
 		"topics": [
 			{
 				"title": "Business & Process Transformation",
-				"text": "Make data usable, consistent and clear, enabling faster, stronger and evidence-based decisions.",
+				"text": "Redesign operations by process mapping and improvement, removing bottlenecks, and building structures that sustain results over time.",
 				"data": [
 					{
-						"icon": "lifecycle",
+						"icon": "ci",
 						"title": "Continuous Improvement",
-						"text": "CI Framework System​\nDigital Obeya Analytics​\nProduction Yield Optimization​\nPredictive Maintenance​\nLead Time Optimization​"
+						"text": "Process mapping & optimization\nEnd-to-end Process Redesign\nLean Transformation\nOperational Excellence\nPerformance acceleration"
 					},
 					{
-						"icon": "transformation",
+						"icon": "digitalTransformation",
 						"title": "Digital Transformation",
-						"text": "VOC& VOE Platform​\nPerformance Management DAX ​\nOperational Excellence DAX\nDigital Hoshin Kanri DAX\nData Stratification & Enhancement​"
+						"text": "Digital Strategy delivery\nData & Analytics platforms\nReal-time performance dashboards\nAutomation & System Integration\nAdvanced Decision Intelligence"
 					},
 					{
-						"icon": "handshake",
-						"title": "Corporate Governance",
-						"text": "Digital Transformation Framework\nDigital Reward&Recognition Ambassadors Framework​\nIdeation Digital Platform​\nQuality Assurance System"
+						"icon": "corporateGov",
+						"title": "Change Management",
+						"text": "Enterprise Transformations\nOrganizational Restructuring\nOperating Model redesign\nWorkforce Adoption at scale\nTransformation Governance"
 					},
 					{
-						"icon": "management",
-						"title": "Project Management​",
-						"text": "ROI & Results Tracking System​\nProject Management Database​\nResource Capacity Dashboard\nIT Systems Upgrade & Migration Customer Data Integration"
+						"icon": "projectManagement",
+						"title": "Project Management",
+						"text": "ROI & results tracking system\nProduct Management ownership\nResource capacity management\nIT Systems Upgrade & Migration Scalable execution frameworks"
 					}
 				]
 			},
 			{
-				"title": "Data Inteligence",
-				"text": "Transforming raw data into actionable insights, enabling data-driven decisions to optimize performance and drive growth.",
+				"title": "Data Intelligence",
+				"text": "Make data usable, consistent and clear, enabling faster, stronger and evidence-based decisions.",
 				"data": [
 					{
-						"icon": "lifecycle",
-						"title": "Continuous Improvement",
-						"text": "CI Framework System​\nDigital Obeya Analytics​\nProduction Yield Optimization​\nPredictive Maintenance​\nLead Time Optimization​"
+						"icon": "bi",
+						"title": "Business Intelligence",
+						"text": "BI Tools and Platforms\nDashboard Development\nKey Performance Indicators (KPIs)\nData Warehousing\nReal-time BI"
 					},
 					{
-						"icon": "transformation",
-						"title": "Digital Transformation",
-						"text": "VOC& VOE Platform​\nPerformance Management DAX ​\nOperational Excellence DAX\nDigital Hoshin Kanri DAX\nData Stratification & Enhancement​"
+						"icon": "dataVisualization",
+						"title": "Data Visualization",
+						"text": "Visualization Techniques\nStorytelling with Data\nInteractive Dashboards\nVisualization Tools\nCustom Reports"
 					},
 					{
-						"icon": "handshake",
-						"title": "Corporate Governance",
-						"text": "Digital Transformation Framework\nDigital Reward&Recognition Ambassadors Framework​\nIdeation Digital Platform​\nQuality Assurance System"
+						"icon": "dataAnalysis",
+						"title": "Data Analysis",
+						"text": "Data Collection & Preparation Statistical Analysis\nData Mining\nText and Sentiment Analysis Anomaly Detection"
 					},
 					{
-						"icon": "management",
-						"title": "Project Management​",
-						"text": "ROI & Results Tracking System​\nProject Management Database​\nResource Capacity Dashboard\nIT Systems Upgrade & Migration Customer Data Integration"
+						"icon": "predictiveAnalysis",
+						"title": "Predictive Analysis",
+						"text": "Predictive Modeling\nMachine Learning Algorithms Time Series Analysis\nRisk Assessment\nCustomer Behavior Prediction"
 					}
 				]
 			},
 			{
 				"title": "Intelligent Automation",
-				"text": "Transforming raw data into actionable insights, enabling data-driven decisions to optimize performance and drive growth.",
+				"text": "Automate repetitive tasks to cut waste, reduce errors and allow people to focus on higher-value work.",
 				"data": [
 					{
-						"icon": "lifecycle",
-						"title": "Continuous Improvement",
-						"text": "CI Framework System​\nDigital Obeya Analytics​\nProduction Yield Optimization​\nPredictive Maintenance​\nLead Time Optimization​"
+						"icon": "rpa",
+						"title": "Robotic Process Automaton",
+						"text": "Invoice processing & posting\nReport extraction and uploads\nData entry and reconciliations\nForm processing"
 					},
 					{
-						"icon": "transformation",
-						"title": "Digital Transformation",
-						"text": "VOC& VOE Platform​\nPerformance Management DAX ​\nOperational Excellence DAX\nDigital Hoshin Kanri DAX\nData Stratification & Enhancement​"
+						"icon": "lightAutomation",
+						"title": "Light Automation",
+						"text": "Room booking management\nInventory counts and alerts\nEmail triage and routing\nTask reminders"
 					},
 					{
-						"icon": "handshake",
-						"title": "Corporate Governance",
-						"text": "Digital Transformation Framework\nDigital Reward&Recognition Ambassadors Framework​\nIdeation Digital Platform​\nQuality Assurance System"
+						"icon": "integrationServices",
+						"title": "Integration Services",
+						"text": "Core systems data sync\nDocument repository connectors\nSingle sign-on APIs\nMessaging platform integration"
 					},
 					{
-						"icon": "management",
-						"title": "Project Management​",
-						"text": "ROI & Results Tracking System​\nProject Management Database​\nResource Capacity Dashboard\nIT Systems Upgrade & Migration Customer Data Integration"
+						"icon": "workflowAutomation",
+						"title": "Workflow Automation",
+						"text": "Document approval cycle\nDocument management & retention\nService requests and SLAs\nEmployee onboarding"
 					}
 				]
 			},
 			{
 				"title": "AI Solutions & Development",
-				"text": "Transforming raw data into actionable insights, enabling data-driven decisions to optimize performance and drive growth.",
+				"text": "We build AI systems tailored to complex challenges, including forecasting, detection, decision support and streamlined operations.",
 				"data": [
 					{
-						"icon": "lifecycle",
-						"title": "Continuous Improvement",
-						"text": "CI Framework System​\nDigital Obeya Analytics​\nProduction Yield Optimization​\nPredictive Maintenance​\nLead Time Optimization​"
+						"icon": "nlp",
+						"title": "Natural Language Processing",
+						"text": "BI Text Preprocessing\nSentiment Analysis\nNamed Entity Recognition (NER)\nMachine Translation\nChatbots (LLM) & Virtual Assistants"
 					},
 					{
-						"icon": "transformation",
-						"title": "Digital Transformation",
-						"text": "VOC& VOE Platform​\nPerformance Management DAX ​\nOperational Excellence DAX\nDigital Hoshin Kanri DAX\nData Stratification & Enhancement​"
+						"icon": "ml",
+						"title": "Machine Learning Models",
+						"text": "Models Supervised Learning\nUnsupervised Learning\nReinforcement Learning\nDeep Learning\nModel Evaluation"
 					},
 					{
-						"icon": "handshake",
-						"title": "Corporate Governance",
-						"text": "Digital Transformation Framework\nDigital Reward&Recognition Ambassadors Framework​\nIdeation Digital Platform​\nQuality Assurance System"
+						"icon": "customAI",
+						"title": "Custom AI Solutions",
+						"text": "AI Development\nIntegration with Existing Systems\nScalability and Deployment\nIndustry-Specific Solutions\nEthical AI"
 					},
 					{
-						"icon": "management",
-						"title": "Project Management​",
-						"text": "ROI & Results Tracking System​\nProject Management Database​\nResource Capacity Dashboard\nIT Systems Upgrade & Migration Customer Data Integration"
+						"icon": "webdev",
+						"title": "Platform Development",
+						"text": "Front-End & Back-End Development\nAuthentication & Authorization\nAPI Development\nIntegration with In-House Solutions"
 					}
 				]
 			}

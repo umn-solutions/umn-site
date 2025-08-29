@@ -16,7 +16,9 @@ section.solutions {
 	}
 
 	.carousel {
-		// height: 80%;
 		width: 100%;
+		.carrousel-item {
+			height: 60dvh !important;
+		}
 	}
 }

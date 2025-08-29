@@ -1,13 +1,13 @@
 export const i18n = {
 	defaultLocale: "en",
-	locales: ["en", "pt"],
+	locales: ["en"],
 } as const;
 
 export type Locale = (typeof i18n)["locales"][number];
 
 const dictionaries = {
 	en: () => import("./dictionaries/en.json").then((module) => module.default),
-	pt: () => import("./dictionaries/pt.json").then((module) => module.default),
+	// pt: () => import("./dictionaries/pt.json").then((module) => module.default),
 };
 
 // Infer the type of the 'dictionaries' object

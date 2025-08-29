@@ -21,11 +21,13 @@ export default function SliderCard({ pane1, pane2 }: SliderCardProps) {
 				return;
 			}
 			const val =
-				(((mousePos.x + Math.log(mousePos.y)*10) * 1.2) /
+				(((mousePos.x + Math.log(mousePos.y) * 10) * 1.2) /
 					window.innerWidth) *
 				100;
 
-			cardRef.current.style.width = `${Math.max(25,Math.min(val,95))}%`;
+			const minWidth = window.innerWidth > 1000 ? 35 : 25,
+				maxWidth = window.innerWidth > 1000 ? 70 : 95;
+			cardRef.current.style.width = `${Math.max(minWidth, Math.min(val, maxWidth))}%`;
 		}
 	}, [mousePos]);
 

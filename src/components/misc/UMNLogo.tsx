@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import UMNLogo_White from "@/media/UMN-RGB_White.png";
+import UMNLogo_White from "@/media/logo2.svg";
 import { motion } from "motion/react";
 export default function UMNLogo({
 	repeatAnimation = false,

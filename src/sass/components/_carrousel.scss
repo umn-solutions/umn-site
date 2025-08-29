@@ -1,7 +1,7 @@
 @use "../abstract/colors" as colors;
 @use "../abstract/media-queries" as media-queries;
 .carrousel-item {
-	border-radius: 80px;
+	border-radius: 20px;
 	background: colors.lightGrad();
 	padding: 2em 4em;
 	display: flex;
@@ -9,6 +9,7 @@
 	place-content: center;
 	gap: 1em;
 	font-size: 0.8rem;
+
 	&__title {
 		font-weight: bold;
 		text-align: start;
@@ -27,10 +28,10 @@
 			content: "";
 			display: block;
 			position: absolute;
-			background: colors.$secondary500;
+			background: rgba(colors.$light, 0.5);
 			border-radius: 50px;
 		}
-		$border-thickness: 2px;
+		$border-thickness: 3px;
 		&::after {
 			@include borderLine();
 			height: 100%;
@@ -108,13 +109,15 @@
 		}
 	}
 	&__data-item {
+		position: relative;
 		display: flex;
 		flex-direction: column;
 		gap: 0.5em;
-		place-items: start;
-		place-content: start;
+		// border: 1px solid red;
+
 		padding: 0.75em;
 		// font-size: 0.8em;
+		overflow: hidden;
 		& * {
 			font-size: 0.8rem;
 		}
@@ -122,10 +125,30 @@
 			font-size: 1rem;
 			font-weight: bold;
 			text-align: start;
-
+			color: colors.$secondary400;
 			@include media-queries.mobile-portrait {
 				font-size: initial;
 			}
+		}
+		&__text {
+			// border: 1px solid greenyellow;
+			// width: 80%;
+			// text-align: center;
+			padding-left: 2ch;
+		}
+
+		& img {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			$size: 200%;
+			width: $size;
+			height: $size;
+			object-fit: cover;
+			z-index: -1;
+			opacity: 0.1;
+			filter: brightness(0) invert(1);
 		}
 	}
 

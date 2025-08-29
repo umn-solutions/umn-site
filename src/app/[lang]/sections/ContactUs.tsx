@@ -31,7 +31,7 @@ export default function ContactUs({
 				className="contact-us__cta"
 			>
 				We don’t seek <span className="umn_gray">clients</span>. We seek{" "}
-				<span className="umn_gold">visionary partners</span>.
+				<span className="umn_gold">visionary partners</span>
 			</motion.p>
 			<motion.p
 				{...fadeInMotionProps}
@@ -44,8 +44,8 @@ export default function ContactUs({
 				viewport={{ once: false }}
 				className="contact-us__cta"
 			>
-				Technology exists <span className="umn_gold">to empower</span>,
-				<span className="umn_gray">not overshadow</span>.
+				Technology exists <span className="umn_gold">to empower</span>, 
+				<span className="umn_gray"> not overshadow</span>
 			</motion.p>
 		</MainSection>
 	);

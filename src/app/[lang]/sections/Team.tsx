@@ -9,6 +9,7 @@ import UMNTitle from "@/components/typography/UMNTitle";
 import GilGaspar from "@/media/gilgaspar.png";
 import UMNLogoText from "@/components/misc/UMNLogoText";
 import { AnimatePresence, motion, MotionProps } from "motion/react";
+import linkedIn from "@/media/linkedin.png";
 import {
 	fadeInMotionProps,
 	fadeSlideInMotionProps,
@@ -39,7 +40,7 @@ export default function Team({
 					Our strength is hUMaN. We are a collective of strategists,
 					scientists, and creators bound by a single conviction:{" "}
 					<span className="umn_gold">
-						 technology should serve people, not replace them.
+						technology should serve people, not replace them.
 					</span>
 				</p>
 				<p className="team__text">

@@ -23,15 +23,15 @@
 		margin-top: -1em;
 		align-self: start;
 		grid-area: text;
+		display: flex;
+		flex-direction: column;
+		gap: 1.5em;
 	}
 	&__text {
 		color: colors.$text-secondary;
 		max-width: 55ch;
-		font-size: 1.40rem;
+		font-size: 1.4rem;
 		padding-left: 2em;
-			&:first-child{
-				margin-bottom: 1.5em;
-			}
 	}
 	&__photo {
 		grid-area: photo;
