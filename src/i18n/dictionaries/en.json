@@ -55,7 +55,7 @@
 					{
 						"icon": "projectManagement",
 						"title": "Project Management",
-						"text": "ROI & results tracking system\nProduct Management ownership\nResource capacity management\nIT Systems Upgrade & Migration Scalable execution frameworks"
+						"text": "ROI & results tracking system\nProduct Management ownership\nResource capacity management\nIT Systems Upgrade & Migration\nScalable execution frameworks"
 					}
 				]
 			},
@@ -76,12 +76,12 @@
 					{
 						"icon": "dataAnalysis",
 						"title": "Data Analysis",
-						"text": "Data Collection & Preparation Statistical Analysis\nData Mining\nText and Sentiment Analysis Anomaly Detection"
+						"text": "Data Collection & Preparation\nStatistical Analysis\nData Mining\nText and Sentiment Analysis\nAnomaly Detection"
 					},
 					{
 						"icon": "predictiveAnalysis",
 						"title": "Predictive Analysis",
-						"text": "Predictive Modeling\nMachine Learning Algorithms Time Series Analysis\nRisk Assessment\nCustomer Behavior Prediction"
+						"text": "Predictive Modeling\nMachine Learning Algorithms\nTime Series Analysis\nRisk Assessment\nCustomer Behavior Prediction"
 					}
 				]
 			},
@@ -133,7 +133,7 @@
 					{
 						"icon": "webdev",
 						"title": "Platform Development",
-						"text": "Front-End & Back-End Development\nAuthentication & Authorization\nAPI Development\nIntegration with In-House Solutions"
+						"text": "Front-End & Back-End Development\nAuthentication & Authorization\nAPI Development\nIntegration with In-House Solutions\nAutomated Workflows"
 					}
 				]
 			}

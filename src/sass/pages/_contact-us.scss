@@ -6,6 +6,9 @@
 }
 
 .contact-us {
+	display: flex;
+	flex-direction: column;
+	gap: .5em;
 	.umn-logo {
 		margin-bottom: 1em;
 		opacity: 0.85 !important;

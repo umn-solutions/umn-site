@@ -302,9 +302,9 @@ a {
 }
 
 .carrousel-item {
-  border-radius: 20px;
+  border-radius: 50px;
   background: linear-gradient(0deg, rgba(229.0714285714, 243.2142857143, 253.9285714286, 0.25), rgba(180.0952380952, 220.9523809524, 251.9047619048, 0.25));
-  padding: 2em 4em;
+  padding: 1.5em 3em;
   display: flex;
   flex-direction: column;
   place-content: center;
@@ -1099,6 +1099,11 @@ section.solutions .carousel .carrousel-item {
   50% {
     filter: blur(0px) contrast(1.25);
   }
+}
+.contact-us {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
 }
 .contact-us .umn-logo {
   margin-bottom: 1em;

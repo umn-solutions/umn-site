@@ -1,9 +1,9 @@
 @use "../abstract/colors" as colors;
 @use "../abstract/media-queries" as media-queries;
 .carrousel-item {
-	border-radius: 20px;
+	border-radius: 50px;
 	background: colors.lightGrad();
-	padding: 2em 4em;
+	padding: 1.5em 3em;
 	display: flex;
 	flex-direction: column;
 	place-content: center;

@@ -5,9 +5,12 @@
 	"scripts": {
 		"dev": "next dev",
 		"build": "next build",
-		"start": "next start",
+		"start": "node hostingr.entry.js",
 		"lint": "next lint",
 		"watchsass": "sass ./src/sass/main.scss ./src/app/sass-main.css --watch"
+	},
+	"engines": {
+		"node": ">=18"
 	},
 	"dependencies": {
 		"embla-carousel-react": "^8.6.0",
