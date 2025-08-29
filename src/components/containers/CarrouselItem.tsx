@@ -38,7 +38,7 @@ const ICONS = {
 export interface CarrouselItemProps {
 	title: string;
 	text: string;
-	data: { title: string; text: string; icon: keyof typeof ICONS }[];
+	data: { title: string; text: string; icon: string }[];
 }
 
 export default function CarrouselItem({
@@ -58,7 +58,7 @@ export default function CarrouselItem({
 						key={"carrousel-item__data-item-" + i}
 					>
 						<Image
-							src={ICONS[e.icon]}
+							src={ICONS[e.icon as keyof typeof ICONS]}
 							alt=""
 						/>
 						<h4 className="carrousel-item__data-item__title">
