@@ -12,7 +12,8 @@ export default function ContactButton({
 				{dictionary["contact-us"]}
 			</span>
 			<a
-				href="mailto:umn.infocontact@gmail.com?subject=Partnership%20Proposal"
+				// href="mailto:umn.infocontact@gmail.com?subject=Partnership%20Proposal"
+				href="https://calendly.com/umn-infocontact/30min"
 				target="_blank"
 				className="contact-btn__book"
 			>
