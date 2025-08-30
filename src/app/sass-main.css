@@ -353,8 +353,8 @@ a {
   .carrousel-item__data {
     margin: 0;
     grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    grid-area: 0.5em;
+    grid-template-rows: repeat(4, max-content);
+    gap: 0.5em;
     height: 40dvh;
     overflow: auto;
     scrollbar-width: 0.33rem;
@@ -369,7 +369,7 @@ a {
     display: none;
   }
   .carrousel-item__data > * {
-    border-bottom: 2px solid #a88235;
+    border-bottom: 3px solid rgba(239, 239, 239, 0.5);
   }
   .carrousel-item__data > *:last-child {
     border-bottom: none;
@@ -419,6 +419,7 @@ a {
 }
 .carrousel-item__data-item__text {
   padding-left: 2ch;
+  display: block;
 }
 .carrousel-item__data-item img {
   position: absolute;

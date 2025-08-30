@@ -52,10 +52,11 @@
 		@include media-queries.mobile-portrait {
 			margin: 0;
 			grid-template-columns: 1fr;
-			grid-template-rows: auto;
-			grid-area: 0.5em;
+			grid-template-rows: repeat(4, max-content);
+			gap: 0.5em;
 			height: 40dvh;
 			overflow: auto;
+
 			scrollbar-width: 0.33rem;
 			-ms-overflow-style: auto;
 			&::before,
@@ -63,7 +64,7 @@
 				display: none;
 			}
 			& > * {
-				border-bottom: 2px solid colors.$secondary500;
+				border-bottom: 3px solid rgba(colors.$light, 0.5);
 			}
 			& > *:last-child {
 				border-bottom: none;
@@ -113,11 +114,9 @@
 		display: flex;
 		flex-direction: column;
 		gap: 0.5em;
-		// border: 1px solid red;
-
 		padding: 0.75em;
-		// font-size: 0.8em;
 		overflow: hidden;
+
 		& * {
 			font-size: 0.8rem;
 		}
@@ -135,6 +134,7 @@
 			// width: 80%;
 			// text-align: center;
 			padding-left: 2ch;
+			display: block;
 		}
 
 		& img {

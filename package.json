@@ -5,7 +5,7 @@
 	"scripts": {
 		"dev": "next dev",
 		"build": "next build",
-		"start": "node hostingr.entry.js",
+		"start": "next start",
 		"lint": "next lint",
 		"watchsass": "sass ./src/sass/main.scss ./src/app/sass-main.css --watch"
 	},
