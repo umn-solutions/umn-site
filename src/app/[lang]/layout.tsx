@@ -8,6 +8,22 @@ import { i18n, Locale } from "@/i18n/i18n.config";
 export const metadata: Metadata = {
 	title: "UMN Solutions",
 	description: "Leading Data Solutions",
+	metadataBase: new URL("https://umnsolutions.net"),
+	openGraph: {
+		type: "website",
+		url: "/",
+		title: "UMN Solutions — Leading Data Solutions",
+		description: "Leading Data Solutions",
+		images: [
+			{ url: "/og.jpg", width: 1200, height: 630, alt: "UMN Solutions" },
+		],
+	},
+	twitter: {
+		card: "summary_large_image",
+		title: "UMN Solutions — Leading Data Solutions",
+		description: "Leading Data Solutions",
+		images: ["/og.jpg"],
+	},
 };
 
 export async function generateStaticParams() {
